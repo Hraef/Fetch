@@ -7,7 +7,7 @@ The Fetch Health Checker is a Python application that continuously monitors the 
 ## Features
 
 - Load endpoint configurations from a YAML file.
-- Perform health checks at configurable intervals.
+- Perform health checks at 15 second intervals.
 - Log the availability percentage of each endpoint.
 - Print status and latency for each endpoint.
 - Logs overall result for each endpoint
@@ -18,6 +18,12 @@ The Fetch Health Checker is a Python application that continuously monitors the 
 - `requests` library
 - `PyYAML` library
 
+## Demo YAML Configuration
+
+For a demonstration of the YAML file structure, please view the `demo.yaml` file in this repository. This file currently contains placeholders that you can replace with your own values or upload your own YAML file.
+
+Ensure that your custom YAML file follows the same structure as the provided `demo.yaml`.
+
 ## Installation
 
 1. **Clone the repository:**
@@ -26,18 +32,35 @@ The Fetch Health Checker is a Python application that continuously monitors the 
   git clone <repository-url>
   cd <repository-directory>
   ```
-2. **Install requirements:**
+2. **Setup virtual environment (Optional but recommended):**
+  ```bash
+  python -m venv venv
+  ```
+3. **Activate virtual environment**
+- For Bash:
+  ```bash
+  source venv/scripts/activate
+  ```
+- For Windows (command prompt):
+  ```cmd
+  venv\Scripts\activate
+  ```
+- For Windows (powershell):
+  ```powershell
+  .\venv\Scripts\Activate.ps1
+  ```
+4. **Install requirements:**
   ```python
   pip install -r requirements.txt
   ```
-3. **Run program**:
+5. **Run program**:
   ```python
   python fetch.py /path/to/your/yaml_file.yaml
   ```
 
 ## Note:
 
-If your yaml file is in the same directory then you can declare like this:
+If your YAML file is in the same directory, you can run:
    
   ```python
     python fetch.py ./demo.yaml
