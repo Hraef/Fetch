@@ -1,22 +1,22 @@
 - headers:
     user-agent: placeholder-user-agent
   method: GET
-  name: placeholder index page
+  name: placeholder page 1
   url: https://placeholder.com/
 
 - headers:
     user-agent: placeholder-user-agent
   method: GET
-  name: placeholder careers page
-  url: https://placeholder.com/careers
+  name: placeholder page 2
+  url: https://placeholder.com/2
 
 - body: '{"key":"value"}'
   headers:
     content-type: application/json
     user-agent: placeholder-user-agent
   method: POST
-  name: placeholder post endpoint
-  url: https://placeholder.com/some/post/endpoint
+  name: placeholder page 3
+  url: https://placeholder.com/3
 
-- name: placeholder rewards index page
-  url: https://www.placeholder.com/
+- name: placeholder page 4
+  url: https://placeholder.com/4
