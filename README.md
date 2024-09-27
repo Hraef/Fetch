@@ -35,8 +35,8 @@ The Fetch Health Checker is a Python application that continuously monitors the 
   python fetch.py /path/to/your/yaml_file.yaml
   ```
   Note: If your yaml file is in the same directory then you can declare like this:
-    - ```python
+    ```python
       python fetch.py ./demo.yaml
-      ```
+    ```
   Note: To end the program press:
     - **Ctrl+C**
