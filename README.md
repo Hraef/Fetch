@@ -15,6 +15,7 @@ The Fetch Health Checker is a Python application that continuously monitors the 
 ## Requirements
 
 - Python 3.9 or higher
+  - To install Python go [here](https://www.python.org/downloads/)
 - `requests` library
 - `PyYAML` library
 
